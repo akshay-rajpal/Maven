@@ -224,15 +224,15 @@ public class GmailHomePage {
 			System.out.println("\nNo mail from " + name + " with subject "
 					+ subject + " was starred");
 
-			System.out.println("\nNumber of starred mails in inbox from " + name
-					+ " with subject " + subject + " is:"
+			System.out.println("\nNumber of starred mails in inbox from "
+					+ name + " with subject " + subject + " is:"
 					+ numberOfStarredMailInbox);
 		} else {
-			System.out.println("\n"+alreadyStarredMails + " mail(s) from " + name
-					+ " with subject " + subject + " was starred");
+			System.out.println("\n" + alreadyStarredMails + " mail(s) from "
+					+ name + " with subject " + subject + " was starred");
 
-			System.out.println("\nNumber of starred mails in inbox from " + name
-					+ " with subject " + subject + " is:"
+			System.out.println("\nNumber of starred mails in inbox from "
+					+ name + " with subject " + subject + " is:"
 					+ numberOfStarredMailInbox);
 		}
 		return numberOfStarredMailInbox;
@@ -286,6 +286,5 @@ public class GmailHomePage {
 		driver.quit();
 
 	}
-
 
 }
