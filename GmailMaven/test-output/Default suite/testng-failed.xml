@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="MavenTest.GmailMaven.TestLogin">
+        <methods>
+          <include name="Screenshot"/>
+        </methods>
+      </class> <!-- MavenTest.GmailMaven.TestLogin -->
+      <class name="MavenTest.GmailMaven.TestDraftMail">
+        <methods>
+          <include name="Screenshot"/>
+          <include name="draftTest"/>
+        </methods>
+      </class> <!-- MavenTest.GmailMaven.TestDraftMail -->
+      <class name="MavenTest.GmailMaven.TestStarMail">
+        <methods>
+          <include name="Screenshot"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- MavenTest.GmailMaven.TestStarMail -->
+      <class name="MavenTest.GmailMaven.TestSearchMail">
+        <methods>
+          <include name="Screenshot"/>
+        </methods>
+      </class> <!-- MavenTest.GmailMaven.TestSearchMail -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

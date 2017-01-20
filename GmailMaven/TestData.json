@@ -1,0 +1,11 @@
+{
+
+  "email":'loginautomate@gmail.com',
+  "password":"test@12345",
+  "searchText":"Akshay",
+  "mailTo":"Akshay",
+  "subjectDraft":"TestJSon",
+  "mailFrom":"Akshay Rajpal",
+  "starSubject":"test2"
+
+}

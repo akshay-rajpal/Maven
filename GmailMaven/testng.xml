@@ -1,0 +1,45 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GmailTestSuite">
+
+  <parameter name="jsonPath" value="E://akshay.rajpal//workspace//GmailMaven//TestData.json" />
+
+  <test name="loginTest">
+  
+    <parameter name="email" value="loginautomate@gmail.com" />
+  
+    <parameter name="password" value="test@12345" />
+     
+    <classes>
+    <class name="MavenTest.GmailMaven.TestLogin"/>
+    </classes>
+  </test>
+  
+  <test name="searchTest">
+    
+    <classes>
+    <class name="MavenTest.GmailMaven.TestSearchMail" />
+   </classes>
+</test>
+
+<test name="draftTest">   
+   
+   <parameter name="subject" value="maven test" />
+   
+    <classes>
+    <class name="MavenTest.GmailMaven.TestDraftMail" />
+   </classes>
+</test>
+
+<test name="starTest">   
+
+  <parameter name="mailFrom" value="Akshay rajpal" />
+  
+    <parameter name="subject" value="test2" />
+    <classes>
+    <class name="MavenTest.GmailMaven.TestStarMail" />
+   </classes>
+</test>
+
+</suite>

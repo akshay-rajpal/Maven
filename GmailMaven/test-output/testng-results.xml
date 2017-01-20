@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="74231" started-at="2017-01-17T04:26:03Z" finished-at="2017-01-17T04:27:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="74231" started-at="2017-01-17T04:26:03Z" finished-at="2017-01-17T04:27:18Z">
+      <class name="MavenTest.GmailMaven.TestStarMail">
+        <test-method status="PASS" signature="starTest()[pri:3, instance:MavenTest.GmailMaven.TestStarMail@bbfa04]" name="starTest" duration-ms="21745" started-at="2017-01-17T09:56:56Z" finished-at="2017-01-17T09:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- starTest -->
+        <test-method status="PASS" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:MavenTest.GmailMaven.TestStarMail@bbfa04]" name="Screenshot" is-config="true" duration-ms="0" started-at="2017-01-17T09:57:18Z" finished-at="2017-01-17T09:57:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=starTest status=SUCCESS method=TestStarMail.starTest()[pri:3, instance:MavenTest.GmailMaven.TestStarMail@bbfa04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+        <test-method status="PASS" signature="close()[pri:0, instance:MavenTest.GmailMaven.TestStarMail@bbfa04]" name="close" is-config="true" duration-ms="1026" started-at="2017-01-17T09:57:18Z" finished-at="2017-01-17T09:57:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- MavenTest.GmailMaven.TestStarMail -->
+      <class name="MavenTest.GmailMaven.TestLogin">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:MavenTest.GmailMaven.TestLogin@1fffcd7]" name="loginTest" duration-ms="37976" started-at="2017-01-17T09:56:03Z" finished-at="2017-01-17T09:56:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:MavenTest.GmailMaven.TestLogin@1fffcd7]" name="Screenshot" is-config="true" duration-ms="0" started-at="2017-01-17T09:56:41Z" finished-at="2017-01-17T09:56:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=TestLogin.loginTest()[pri:0, instance:MavenTest.GmailMaven.TestLogin@1fffcd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+      </class> <!-- MavenTest.GmailMaven.TestLogin -->
+      <class name="MavenTest.GmailMaven.TestSearchMail">
+        <test-method status="PASS" signature="searchTest()[pri:1, instance:MavenTest.GmailMaven.TestSearchMail@1ef45e3]" name="searchTest" duration-ms="5061" started-at="2017-01-17T09:56:41Z" finished-at="2017-01-17T09:56:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:MavenTest.GmailMaven.TestSearchMail@1ef45e3]" name="Screenshot" is-config="true" duration-ms="0" started-at="2017-01-17T09:56:46Z" finished-at="2017-01-17T09:56:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchTest status=SUCCESS method=TestSearchMail.searchTest()[pri:1, instance:MavenTest.GmailMaven.TestSearchMail@1ef45e3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+      </class> <!-- MavenTest.GmailMaven.TestSearchMail -->
+      <class name="MavenTest.GmailMaven.TestDraftMail">
+        <test-method status="PASS" signature="draftTest()[pri:2, instance:MavenTest.GmailMaven.TestDraftMail@18067a5]" name="draftTest" duration-ms="9408" started-at="2017-01-17T09:56:46Z" finished-at="2017-01-17T09:56:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- draftTest -->
+        <test-method status="PASS" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:MavenTest.GmailMaven.TestDraftMail@18067a5]" name="Screenshot" is-config="true" duration-ms="0" started-at="2017-01-17T09:56:56Z" finished-at="2017-01-17T09:56:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=draftTest status=SUCCESS method=TestDraftMail.draftTest()[pri:2, instance:MavenTest.GmailMaven.TestDraftMail@18067a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+      </class> <!-- MavenTest.GmailMaven.TestDraftMail -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
