@@ -3,7 +3,7 @@
 
 <suite name="GmailTestSuite">
 
-  <parameter name="jsonPath" value="E://akshay.rajpal//workspace//GmailMaven//TestData.json" />
+  <parameter name="jsonPath" value="C://Users//akshay.rajpal//git//Maven//GmailMaven//TestData.json" />
 
   <test name="loginTest">
   
