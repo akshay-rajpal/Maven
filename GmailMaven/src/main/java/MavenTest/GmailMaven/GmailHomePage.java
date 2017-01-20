@@ -287,10 +287,5 @@ public class GmailHomePage {
 
 	}
 
-/*	public void captureScreenShot(String name) throws IOException {
-
-		new CaptureScreenShot().takeScreenShot(name);
-
-	}*/
 
 }

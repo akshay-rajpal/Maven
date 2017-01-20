@@ -62,12 +62,7 @@ public class GmailLoginPage {
 		signIn.click();
 
 	}
-/*
-	public void captureScreenShot(String name) throws IOException {
-		
-		new CaptureScreenShot().takeScreenShot(name);
-		
-	}*/
+
 
 
 }
