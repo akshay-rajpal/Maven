@@ -1,4 +1,4 @@
-E:
-cd E:\akshay.rajpal\workspace\GmailMaven
+C:
+cd C:\Users\akshay.rajpal\git\Maven\GmailMaven
 call mvn test
 pause
