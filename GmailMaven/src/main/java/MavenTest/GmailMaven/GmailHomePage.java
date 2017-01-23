@@ -88,12 +88,6 @@ public class GmailHomePage {
 		click(compose);
 	}
 
-	/*
-	 * public void enter_mailTo(String draftMailTo) {
-	 * 
-	 * mailTo.sendKeys(draftMailTo); }
-	 */
-
 	public void enter_subject(String subject) {
 
 		subjectBox.sendKeys(subject);
