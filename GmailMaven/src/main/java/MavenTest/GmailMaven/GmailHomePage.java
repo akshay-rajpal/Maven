@@ -33,7 +33,7 @@ public class GmailHomePage {
 	@FindBy(xpath = "//*[@aria-label='Save & Close']")
 	WebElement closeButton;
 
-	@FindBy(xpath = "//*[@href='https://mail.google.com/mail/#drafts']")
+	@FindBy(xpath = "//*[@href='https://mail.google.com/mail/u/0/#drafts']")
 	WebElement draftLink;
 
 	@FindBy(xpath = "//div[@role='main']/div/div/div/table/tbody/tr[1]/td[8]")
@@ -42,10 +42,10 @@ public class GmailHomePage {
 	@FindBy(xpath = "//div[@role='main']/div/div/div/table/tbody/tr[1]/td[6]")
 	WebElement draftSubject;
 
-	@FindBy(xpath = " //*[@href='https://mail.google.com/mail/#inbox']")
+	@FindBy(xpath = " //*[@href='https://mail.google.com/mail/u/0/#inbox']")
 	WebElement inboxLink;
 
-	@FindBy(xpath = "//*[@href='https://mail.google.com/mail/#starred']")
+	@FindBy(xpath = "//*[@href='https://mail.google.com/mail/u/0/#starred']")
 	WebElement starLink;
 
 	@FindBy(xpath = "//div[@role='main']/div/div/div/table/tbody/tr[1]/td[4]")
