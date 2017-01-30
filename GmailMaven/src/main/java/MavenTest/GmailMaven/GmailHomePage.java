@@ -107,14 +107,6 @@ public class GmailHomePage {
 		}
 	}
 
-	/*
-	 * public void click_star() {
-	 * 
-	 * click(inboxLink);
-	 * 
-	 * click(star); }
-	 */
-
 	public void click_star_link() {
 
 		click(starLink);
@@ -140,7 +132,6 @@ public class GmailHomePage {
 					+ " moved to draft folder");
 		}
 
-		// System.out.println("Draft verified");
 	}
 
 	// verifying that starred mail is in star folder
@@ -164,43 +155,43 @@ public class GmailHomePage {
 		}
 	}
 
-	// Searching and getting number of starred mails in inbox with searched
-	// details
+	int mailsInInbox = 0;
+	int numberOfStarredMailInbox = 0;
+	int alreadyStarredMails = 0;
+	WebElement mailFrom;
+	WebElement mailSubject;
+
 	public int get_starred_mails_in_inbox(String name, String subject)
 			throws InterruptedException {
 
-		// checking number of mails in inbox
-		int mailsInInbox = driver
+		mailsInInbox = driver
 				.findElements(
 						By.xpath("//div[@role='main']/div/div/div/div[@class='Cp']/div/table/tbody/tr"))
 				.size();
 
-		int numberOfStarredMailInbox = 0;
-		int alreadyStarredMails = 0;
 		for (int i = 1; i <= mailsInInbox; i++) {
 
-			WebElement mailFrom = driver
+			mailFrom = driver
 					.findElement(By
 							.xpath("//div[@role='main']/div/div/div/div[@class='Cp']/div/table/tbody/tr["
 									+ i + "]/td[4]"));
-			WebElement mailSubject = driver
+			mailSubject = driver
 					.findElement(By
 							.xpath("//div[@role='main']/div/div/div/div[@class='Cp']/div/table/tbody/tr["
 									+ i + "]/td[6]"));
-			WebElement star1 = driver
+			WebElement star = driver
 					.findElement(By
 							.xpath("//div[@role='main']/div/div/div/div[@class='Cp']/div/table/tbody/tr["
 									+ i + "]/td[3]/span"));
 
 			// checking the mails with searched name and subject
-			if (mailFrom.getText().equalsIgnoreCase(name)
-					&& mailSubject.getText().startsWith(subject)) {
+			if (isMailPresent(name, subject)) {
 
-				String starStatus = star1.getAttribute("title");
+				String starStatus = star.getAttribute("title");
 
 				// checking whether the searched mail is starred already or not
 				if (starStatus.equalsIgnoreCase("not starred")) {
-					star1.click();
+					star.click();
 				} else {
 					alreadyStarredMails++;
 				}
@@ -232,8 +223,16 @@ public class GmailHomePage {
 		return numberOfStarredMailInbox;
 	}
 
-	// Searching and getting number of starred mails in star folder with
-	// searched details
+	public boolean isMailPresent(String name, String subject) {
+
+		if (mailFrom.getText().equalsIgnoreCase(name)
+				&& mailSubject.getText().startsWith(subject)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	public int get_starred_mails_in_star_folder(String name, String subject) {
 
 		int numberOfStarredMail = 0;
@@ -257,7 +256,6 @@ public class GmailHomePage {
 
 				numberOfStarredMail++;
 			}
-
 		}
 		if (numberOfStarredMail != 0)
 			System.out.println("\nNumber of starred mails in star folder from "
@@ -274,11 +272,8 @@ public class GmailHomePage {
 		System.out.println("\nlogged out");
 	}
 
-	// closing the browser
 	public void closeBrowser() {
 
 		driver.quit();
-
 	}
-
 }
